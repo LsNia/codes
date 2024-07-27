@@ -7,16 +7,16 @@ def get_info(ip):
     return data
 
 def main1():
-    ip = input('Введите IP адрес: ')
+    ip = input('Enter IP adress: ')
     ip_info = get_info(ip)
     if ip_info['status'] == "success":
         ip_info = get_info(ip)
-        print('Страна:', ip_info['country'])
-        print('Код страны:', ip_info['countryCode'])
-        print('Регион:', ip_info['regionName'])
-        print('Город:', ip_info['city'])
+        print('Country:', ip_info['country'])
+        print('Country code:', ip_info['countryCode'])
+        print('Region:', ip_info['regionName'])
+        print('City:', ip_info['city'])
     else:
-        print('IP не существует или закрыт')
+        print('IP adress not allowed')
 
 if __name__ == "__main__":
     main1()
